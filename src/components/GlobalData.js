@@ -32,7 +32,7 @@ export default function GlobalData() {
       console.log(gdata);
     }
     fetchData();
-  }, []);
+  },[]);
 
 
   

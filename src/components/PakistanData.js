@@ -47,9 +47,6 @@ export default function PakistanData() {
       const dataFromAPI = await apiResponse.json();
       setGD(dataFromAPI);
       console.log(gdatapk);
-      settotalcases(gdatapk && gdatapk.countrydata && gdatapk.countrydata[0].total_cases);
-      settotalrecoverd(gdatapk && gdatapk.countrydata && gdatapk.countrydata[0].total_recovered);
-      settotalf(gdatapk && gdatapk.countrydata && gdatapk.countrydata[0].total_deaths);
     }
     fetchData();
   }, []);
