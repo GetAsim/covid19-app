@@ -39,9 +39,6 @@ const data = {
 export default function PakistanData() {
   const classes = useStyles();
   const [gdatapk, setGD] = useState();
-  const [totalcases, settotalcases] = useState();
-  const [totalrecoverd, settotalrecoverd] = useState();
-  const [totalf, settotalf] = useState();
   useEffect(() => {
     async function fetchData() {
       const apiResponse = await fetch(
